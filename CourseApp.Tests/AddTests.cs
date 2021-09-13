@@ -12,7 +12,7 @@
             int expected = -7;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -23,7 +23,7 @@
             int expected = -1;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -34,7 +34,7 @@
             int expected = 1;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -45,7 +45,7 @@
             int expected = -1;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -56,7 +56,7 @@
             int expected = 1;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -67,7 +67,7 @@
             int expected = 5;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -78,7 +78,7 @@
             int expected = 0;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -89,7 +89,7 @@
             int expected = 0;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -100,7 +100,7 @@
             int expected = 0;
 
             int actual = new Calculator().Add(a, b);
-            Assert.Equal(actual, expected);
+            Assert.Equal(expected, actual);
         }
     }
 }
