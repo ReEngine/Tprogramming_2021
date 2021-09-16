@@ -102,5 +102,14 @@
             int actual = new Calculator().Add(a, b);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void AddBytesOverflow()
+        {
+            byte a = 255;
+            byte b = 255;
+
+            Assert.Throws<System.OverflowException>(() => new Calculator().Add(a, b));
+        }
     }
 }

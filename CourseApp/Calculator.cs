@@ -23,10 +23,8 @@
             {
                 return (byte)((int)a + (int)b);
             }
-            else
-            {
-                throw new System.Exception("You are trying to add two 8-bit numbers, which sum is more than 8-bit");
-            }
+
+            throw new System.OverflowException("You are trying to add two 8-bit numbers, which sum is more than 8-bit");
         }
 
         public int Sub(int a, int b)
