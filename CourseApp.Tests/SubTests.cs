@@ -58,5 +58,14 @@
             int actual = new Calculator().Sub(a, b);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void SubBytesOverflow()
+        {
+            byte a = 0;
+            byte b = 1;
+
+            Assert.Throws<System.OverflowException>(() => new Calculator().Sub(a, b));
+        }
     }
 }

@@ -48,10 +48,8 @@
             {
                 return (byte)((int)a + (int)b);
             }
-            else
-            {
-                throw new System.Exception("You are trying to subtract two unsigned, which result of wubtracting is less than zero");
-            }
+
+            throw new System.OverflowException("You are trying to subtract two unsigned, which result of wubtracting is less than zero");
         }
     }
 }
