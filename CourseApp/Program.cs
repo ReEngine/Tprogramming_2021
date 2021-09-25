@@ -7,12 +7,20 @@
         public static void Main(string[] args)
         {
             const double b = 2.5;
-            var funcalc = new FunctionCalculator();
-            Console.WriteLine("Calculating task A\n");
-            funcalc.CalculateTaskA(1.28, 3.28, 0.4, b);
+            var functionCalculator = new FunctionCalculator();
+            Console.WriteLine("Calculating task A:\n");
+            foreach (double num in functionCalculator.CalculateTaskA(1.28, 3.28, 0.4, b))
+            {
+                Console.WriteLine(num);
+            }
+
             double[] nums = new double[] { 1.1, 2.4, 3.6, 1.7, 3.9 };
-            Console.WriteLine("Calculating task B\n");
-            funcalc.CalculateTaskB(nums, b);
+            Console.WriteLine("\nCalculating task B:\n");
+            foreach (double num in functionCalculator.CalculateTaskB(nums, b))
+            {
+                Console.WriteLine(num);
+            }
+
             Console.ReadKey();
         }
     }
