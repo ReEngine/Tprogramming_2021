@@ -7,11 +7,34 @@
         private string name;
         private double tailLength;
 
-        public Cat(int age, string name, int tailLength)
+        public Cat(int age, string name, double tailLength)
         {
-            this.Age = age;
-            this.name = name;
-            this.tailLength = tailLength;
+            if (age < 0)
+            {
+                throw new System.ArgumentException();
+            }
+            else
+            {
+                this.Age = age;
+            }
+
+            if (name == string.Empty || name.Length == 0)
+            {
+                throw new System.ArgumentException();
+            }
+            else
+            {
+                this.name = name;
+            }
+
+            if (tailLength < 0)
+            {
+                throw new System.ArgumentException();
+            }
+            else
+            {
+                this.tailLength = tailLength;
+            }
         }
 
         public Cat()
@@ -30,6 +53,13 @@
         public void PrintInformation()
         {
             Console.WriteLine("Name: " + this.name + "\nAge: " + this.Age + "\nTail Length: " + this.tailLength);
+            Console.Write(
+                " |\\---/|" +
+"   | , _, |" +
+"    \\_`_ / -..----." +
+" ___ / `   ' ,\"\"+ \\  " +
+"(__...'   __\\    |`.___.';" +
+"            (_, ...'(_,.`__)/'.....+");
         }
 
         public void Sound()
