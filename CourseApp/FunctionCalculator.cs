@@ -25,7 +25,7 @@
 
         public List<double> CalculateTaskB(double[] nums, double b)
         {
-            List<double> result = new List<double>();
+            var result = new List<double>();
             foreach (double number in nums)
             {
                 result.Add(Calculate(b, number));
