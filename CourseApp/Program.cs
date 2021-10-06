@@ -9,7 +9,8 @@
             const double b = 2.5;
             var functionCalculator = new FunctionCalculator();
             Console.WriteLine("Calculating task A:\n");
-            foreach (double num in functionCalculator.CalculateTaskA(1.28, 3.28, 0.4, b))
+            var taskA = functionCalculator.CalculateTaskA(1.28, 3.28, 0.4, b);
+            foreach (double num in taskA)
             {
                 Console.WriteLine(num);
             }
