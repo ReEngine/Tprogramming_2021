@@ -4,57 +4,14 @@
 
     public class SubTests
     {
-        [Fact]
-        public void SubIntsNegNegPos()
+        [Theory]
+        [InlineData(-3, -4, 1)]
+        [InlineData(-3, 2, -5)]
+        [InlineData(5, -4, 9)]
+        [InlineData(3, 2, 1)]
+        [InlineData(0, 0, 0)]
+        public void SubIntsNegNegPos(int a, int b, int expected)
         {
-            int a = -3;
-            int b = -4;
-            int expected = 1;
-
-            int actual = new Calculator().Sub(a, b);
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void SubIntsNegPosNeg()
-        {
-            int a = -3;
-            int b = 2;
-            int expected = -5;
-
-            int actual = new Calculator().Sub(a, b);
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void SubIntsPosNegPos()
-        {
-            int a = 5;
-            int b = -4;
-            int expected = 9;
-
-            int actual = new Calculator().Sub(a, b);
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void SubIntsPosPosPos()
-        {
-            int a = 3;
-            int b = 2;
-            int expected = 1;
-
-            int actual = new Calculator().Sub(a, b);
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void SubIntsNulNulNul()
-        {
-            int a = 0;
-            int b = 0;
-            int expected = 0;
-
             int actual = new Calculator().Sub(a, b);
             Assert.Equal(expected, actual);
         }
