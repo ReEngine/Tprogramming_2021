@@ -11,7 +11,7 @@
         {
             if (age < 0)
             {
-                throw new System.ArgumentException();
+                throw new ArgumentException();
             }
             else
             {
@@ -64,7 +64,7 @@
 
         public void Sound()
         {
-            Console.WriteLine("Meow");
+            Console.WriteLine(this.name + "said Meow");
         }
 
         public int GetHumanAge()

@@ -4,7 +4,7 @@
 
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             const double b = 2.5;
             var functionCalculator = new FunctionCalculator();
